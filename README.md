@@ -4,20 +4,11 @@ Test package for the Ash package system.
 
 ## Install
 
-Local checkout:
-
-```bash
-aepkg install /path/to/AshPackageTest
-```
-
-From git (after committing/pushing):
+From git:
 
 ```bash
 aepkg install /Aero-Shell/AshPackageTest
-aepkg install /Aero-Shell/AshPackageTest/tree/main/packages/extra
 ```
-
-Full URLs (`https://github.com/Aero-Shell/AshPackageTest`) also work.
 
 The nested package can also be installed from a checkout with:
 
