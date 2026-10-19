@@ -1,0 +1,15 @@
+name = "ashpkg-extra"
+version = "0.1.0"
+language = "lua"
+description = "Nested package used to test subdirectory git installs"
+priority = 60
+
+[[commands]]
+name = "ashpkg-extra"
+entry = "commands/extra.lua"
+
+[init]
+entrypoint = "init.lua"
+
+[contributions.aliases.aliases]
+ashextra = "ashpkg-extra"
