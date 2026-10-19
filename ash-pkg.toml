@@ -1,0 +1,36 @@
+name = "ashpkg-test"
+version = "1.0.0"
+language = "lua"
+description = "Comprehensive test package for Ash commands, hooks, completions and contributions"
+priority = 50
+
+[[commands]]
+name = "ashpkg"
+entry = "commands/ashpkg.lua"
+
+[[commands]]
+name = "ashpkg-echo"
+entry = "commands/echo.lua"
+
+[[completions]]
+command = "ashpkg"
+definition = "completions/ashpkg.lua"
+
+[init]
+entrypoint = "init.lua"
+
+[contributions.aliases.aliases]
+ashhello = "ashpkg hello"
+
+[contributions.colors.colors]
+ashpkg_accent = "\u001b[38;5;213m"
+
+[contributions.config.settings]
+active_theme = "ashpkg-test"
+
+[contributions.prompt]
+template = "<green>➜</green> <blue>{hostname}</blue> <yellow>{pwd}</yellow> <bright_black>{{ashpkg_badge}}</bright_black> <bright_black>{{ashpkg_now}}</bright_black> <green>➜</green> "
+
+[[contributions.prompt.pieces]]
+name = "ashpkg_badge"
+template = "aepkg {username}"
