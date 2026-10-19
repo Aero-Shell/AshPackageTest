@@ -7,8 +7,7 @@ Test package for the Ash package system.
 From git:
 
 ```bash
-aepkg install https://github.com/Aero-Shell/AshPackageTest
-aepkg install https://github.com/Aero-Shell/AshPackageTest/tree/main/packages/extra
+aepkg install /Aero-Shell/AshPackageTest
 ```
 
 The nested package can also be installed from a checkout with:
