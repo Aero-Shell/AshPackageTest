@@ -76,7 +76,7 @@ end
 
 function commands.prompt(_args)
     prompt.add_piece("ashpkg_now", "at {time}")
-    print("registered prompt piece {{ashpkg_now}} for theme " .. tostring(ash.config().active_theme))
+    print("registered prompt piece {ashpkg_now} for theme " .. tostring(ash.config().active_theme))
     return 0
 end
 
