@@ -4,13 +4,7 @@ Test package for the Ash package system.
 
 ## Install
 
-Local checkout:
-
-```bash
-aepkg install /path/to/AshPackageTest
-```
-
-From git (after committing/pushing):
+From git:
 
 ```bash
 aepkg install https://github.com/Aero-Shell/AshPackageTest
